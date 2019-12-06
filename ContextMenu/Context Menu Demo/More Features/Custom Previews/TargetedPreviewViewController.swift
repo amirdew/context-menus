@@ -135,6 +135,7 @@ class TargetedPreviewViewController: UITableViewController, ContextMenuDemo {
         // backgroundColor to clear, or we'll see a white rect behind it.
         let parameters = UIPreviewParameters()
         parameters.backgroundColor = .clear
+        parameters.visiblePath = .init(roundedRect: cell.previewView.bounds, cornerRadius: cell.previewView.bounds.height / 2)
 
         // Return a targeted preview using our cell previewView and parameters
         return UITargetedPreview(view: cell.previewView, parameters: parameters)

@@ -31,6 +31,6 @@ extension ContextMenuDemo {
         }
 
         // Create and return a UIMenu with all of the actions as children
-        return UIMenu(title: "", children: [share, rename, delete])
+        return UIMenu(title: "an optional title", children: [share, rename, delete])
     }
 }

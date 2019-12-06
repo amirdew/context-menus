@@ -46,6 +46,7 @@
 		27D091FC230CEAC100C5B2FF /* SubmenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmenuViewController.swift; sourceTree = "<group>"; };
 		27D091FE230CEB9600C5B2FF /* InlineSubmenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineSubmenuViewController.swift; sourceTree = "<group>"; };
 		27D09200230CEC5D00C5B2FF /* TargetedPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetedPreviewViewController.swift; sourceTree = "<group>"; };
+		29FD2BD9239A7867001CC51F /* ContextMenu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ContextMenu.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 		2772A8B4230CA2140017442F /* ContextMenu */ = {
 			isa = PBXGroup;
 			children = (
+				29FD2BD9239A7867001CC51F /* ContextMenu.entitlements */,
 				2772A8C9230CA2DA0017442F /* Application */,
 				2772A8CA230CA2E40017442F /* Context Menu Demo */,
 				2772A8CB230CA2EF0017442F /* Assets */,
@@ -384,15 +386,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ContextMenu/ContextMenu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZEAD23GG77;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = 4J5W7CJ2ZV;
 				INFOPLIST_FILE = ContextMenu/Assets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kylebashour.ContextMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = app.amir.ContextMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -402,7 +407,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ContextMenu/ContextMenu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = ZEAD23GG77;
 				INFOPLIST_FILE = ContextMenu/Assets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -411,6 +418,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kylebashour.ContextMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
